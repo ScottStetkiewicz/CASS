@@ -1,15 +1,21 @@
 # **Compositional Analysis and Statistics Suite (CASS)**
 
-CASS is a suite of statistical analyses and visualizations for user-input compositional data. It was developed for evaluating chemical relationships between iron slag samples based on the methodologies outlined in Stetkiewicz (2016). CASS integrates D3 functionality for Principal Component Analysis (PCA), and future iterations will continue to incorporate further JavaScript modification.
+CASS is a collection of statistical analyses and visualizations for user-input compositional data. It was developed for evaluating chemical relationships between iron slag samples based on the methodologies outlined in Stetkiewicz (2016), drawing heavily on the work carried out by Charlton (2007). CASS integrates D3 functionality for Principal Component Analysis (PCA), and future iterations will continue to incorporate further JavaScript modification.
+
+![](d3pca.png)
 
 Heirarchical Cluster Analysis (HCA) is performed using the `dendextend` package, while PCA uses the "robpca" function from `rospca`, which is based on the robust PCA model proposed by [Hubert et al 2005](http://dx.doi.org/10.1198/004017004000000563) in `pcaHubert`.
 
-CASS be run directly through `shiny` using the following commands:
+## Running CASS
+
+CASS be run directly through `shiny` using the following commands, and will appear in a browser window:
 
 ```
 library(shiny)
 runGitHub("CASS", "ScottStetkiewicz")
 ```
+
+Be aware that if the required libraries are not currently on your system (and CASS uses quite a few packages), their installation may take some time.
 
 ## Setup
 
@@ -35,3 +41,5 @@ If you've found CASS useful, please cite it in your research as follows:
 ## References:
 
 <span style="font-variant:small-caps;">Stetkiewicz, S.</span>, (2016). *Iron Age Iron Production in Britain and the Near Continent: Compositional Analyses and Smelting "Systems"*. Unpublished PhD Thesis, University of Edinburgh.
+
+<span style="font-variant:small-caps;">Charlton, M.</span>, (2007). *Ironworking in Northwest Wales: An Evolutionary Analys*. Unpublished PhD Thesis, University College London.
