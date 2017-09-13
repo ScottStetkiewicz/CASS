@@ -1,8 +1,15 @@
-# **Compositiona Analysis and Statistics Suite (CASS)**
+# **Compositional Analysis and Statistics Suite (CASS)**
 
-This package is a suite of statistical analyses and visualizations for user-input compositional data. It was developed for evaluating chemical relationships between iron slag samples based on the methodologies outlined in Stetkiewicz (2016). CASS integrates D3 functionality for Principal Component Analysis (PCA), and future iterations will continue to incorporate further JavaScript modification.
+CASS is a suite of statistical analyses and visualizations for user-input compositional data. It was developed for evaluating chemical relationships between iron slag samples based on the methodologies outlined in Stetkiewicz (2016). CASS integrates D3 functionality for Principal Component Analysis (PCA), and future iterations will continue to incorporate further JavaScript modification.
 
 Heirarchical Cluster Analysis (HCA) is performed using the `dendextend` package, while PCA uses the "robpca" function from `rospca`, which is based on the robust PCA model proposed by [Hubert et al 2005](http://dx.doi.org/10.1198/004017004000000563) in `pcaHubert`.
+
+CASS be run directly through `shiny` using the following commands:
+
+```
+library(shiny)
+runGitHub("CASS", "ScottStetkiewicz")
+```
 
 ## Setup
 
@@ -17,11 +24,11 @@ Dendrogram branch coloring based on *k*-means clustering in not possible yet for
 
 ## Acknowledgments
 
-Like all open-source programs, this package builds off several existing codes and credit goes to each respective `R` package developer. In particular, [SparseData's Clustering package](https://github.com/sparsedata/cluster-analysis) was immensely helpful in developing this interface, and [Julien Barnier's](https://github.com/juba) excellent `scatterD3` package has enabled much of the interactivity for this package.
+Like all open-source programs, CASS builds off several existing codes and credit goes to each respective `R` package developer. In particular, [SparseData's Clustering package](https://github.com/sparsedata/cluster-analysis) was immensely helpful in developing this interface, and [Julien Barnier's](https://github.com/juba) excellent `scatterD3` package has enabled much of the interactivity used here.
 
 ## Citation
 
-If you've found this package useful, please cite it in your research as follows:
+If you've found CASS useful, please cite it in your research as follows:
 
 <span style="font-variant:small-caps;">Stetkiewicz, S.</span>, (2017). Compositional Analysis & Statistics Suite (CASS). https://github.com/ScottStetkiewicz/CASS
 
